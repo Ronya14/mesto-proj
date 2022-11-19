@@ -1,0 +1,20 @@
+.popup__container {
+    grid-area: content;
+    position: fixed;
+    top: 20%;
+    left: calc(50% - 430px/2);
+    width: 462px;
+    display: grid;
+    grid-template-columns: repeat(3, auto);
+    grid-template-rows: repeat(3, auto);
+    grid-template-areas:
+    "close close close"
+    "content content content";
+}
+
+@media screen and (max-width: 450px) {
+    .popup__container {
+        width: 300px;
+        left: 0;
+    }
+}

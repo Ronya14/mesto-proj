@@ -1,0 +1,28 @@
+.profile__add-btn {
+    grid-area: add;
+    width: 150px;
+    height: 50px;
+    border: 2px solid #FFFFFF;
+    border-radius: 2px;
+    background: #000;
+    cursor: pointer;
+    margin: auto 0 auto 16px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    justify-self: right;
+}
+
+@media screen and (max-width: 780px) {
+    .profile__add-btn {
+        width: 50%;
+        margin: 36px auto 0;
+    }
+}
+
+@media screen and (max-width: 450px) {
+    .profile__add-btn {
+        width: calc(100vw - 38px);
+        margin: 36px auto 0;
+    }
+}
